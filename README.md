@@ -1,2 +1,1 @@
-# trabalho_PW
-trabalho de programação web, um site de um artista
+# Projetos de programação web com PHP, WampServer e phpMyAdmin

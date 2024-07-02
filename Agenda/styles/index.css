@@ -1,0 +1,122 @@
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("../imgs/fundo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 90%;
+    max-width: 800px;
+    margin: 20px;
+    position: relative;
+}
+
+#icon {
+    position: absolute;
+    left: 20px;
+    top: 65px;
+    cursor: pointer;
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="datetime-local"],
+textarea,
+button {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="text"],
+textarea,
+input[type="datetime-local"] {
+    width: 100%;
+    box-sizing: border-box;
+    resize: none;
+}
+
+button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+#eventos-lista {
+    list-style: none;
+    padding: 0;
+}
+
+#eventos-lista li {
+    background-color: #eee;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+#eventos-lista li span {
+    cursor: pointer;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    white-space: nowrap; /* Evita a quebra de linha */
+    overflow: hidden; /* Esconde o overflow */
+    text-overflow: ellipsis; /* Adiciona os três pontos */
+}
+
+#action-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    width: 100%;
+    gap: 5px;
+}
+
+@media (min-width: 600px) {
+    #eventos-lista li span {
+        display: block;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
